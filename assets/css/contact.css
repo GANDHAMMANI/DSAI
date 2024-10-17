@@ -1,0 +1,96 @@
+h1 {
+    color: #ffffff; /* Changed header color to white */
+    margin-bottom: 40px; /* Increased margin for more space */
+    font-size: 2.5rem; /* Increased font size for prominence */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Added text shadow */
+}
+
+.contact-info {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: transparent; /* Transparent background */
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 12px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 90%; /* Make the box responsive */
+    max-width: 600px; /* Set a max width */
+    position: relative; /* Required for the glowing effect */
+    overflow: hidden; /* Prevent overflow of glow */
+}
+
+.contact-info:hover {
+    transform: scale(1.05); /* Scale on hover */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+/* Glowing Animation for Container */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(34, 167, 255, 0.7), 0 0 20px rgba(255, 87, 34, 0.5), 0 0 30px rgba(255, 87, 34, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(34, 167, 255, 0.7), 0 0 30px rgba(255, 87, 34, 0.8), 0 0 40px rgba(255, 87, 34, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(34, 167, 255, 0.7), 0 0 20px rgba(255, 87, 34, 0.5), 0 0 30px rgba(255, 87, 34, 0.3);
+    }
+}
+
+.contact-info:hover {
+    animation: glow 1.5s infinite; /* Add glow animation on hover */
+}
+
+.contact-item {
+    margin: 20px 0; /* Increased vertical spacing between items */
+    font-size: 20px; /* Slightly larger font size */
+    display: flex; /* Flexbox for horizontal alignment */
+    align-items: center; /* Center items vertically */
+    transition: all 0.3s;
+}
+
+/* Glowing Animation for Icons */
+@keyframes iconGlow {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    }
+}
+
+.contact-item i {
+    margin-right: 15px; /* Increased space between icon and text */
+    font-size: 28px; /* Increased icon size for better visibility */
+    padding: 12px; /* More padding for a better look */
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+    display: inline-block; /* Ensuring the icon can be clickable */
+}
+
+.contact-item:hover i {
+    transform: scale(1.1); /* Scale icon on hover */
+    animation: iconGlow 1s infinite; /* Add glowing effect on hover */
+}
+
+/* Icon colors */
+.fa-envelope {
+    color: #ff5722; /* Email orange */
+}
+.fa-phone {
+    color: #07db0e; /* Phone green */
+}
+.fab.fa-linkedin {
+    color: #0077b5; /* LinkedIn blue */
+}
+
+.contact-text {
+    background-color: transparent; /* Ensure text background is transparent */
+    color: #efdd17; /* Text color */
+    font-size: 20px; /* Font size */
+    display: inline-block; /* Allow block styling */
+    margin-left: 10px; /* Space between icon and text */
+}
