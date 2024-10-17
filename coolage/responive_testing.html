@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop Only Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .desktop-message {
+            display: none; /* Hidden by default */
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        // Function to check if the user is on a mobile device
+        function redirectMobileUsers() {
+            // Check the width of the window
+            if (window.innerWidth <= 768) { // Adjust the width as needed
+                // Show the desktop message
+                document.getElementById('desktop-message').style.display = 'block';
+                // Hide the rest of the content
+                document.body.style.display = 'none'; // Optionally hide the rest of the body
+            }
+        }
+
+        window.onload = redirectMobileUsers;
+        window.onresize = redirectMobileUsers; // Check again on resize
+    </script>
+</head>
+<body>
+
+    <div id="desktop-message" class="desktop-message">
+        <h1>Desktop View Only</h1>
+        <p>This website is best viewed on a desktop. Please switch to a desktop device to access the content.</p>
+    </div>
+
+    <div id="main-content">
+        <h1>Welcome to the Desktop-Only Website</h1>
+        <p>This is the main content that only desktop users should see.</p>
+        <!-- Add your website content here -->
+    </div>
+
+</body>
+</html>
