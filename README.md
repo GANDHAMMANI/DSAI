@@ -2,7 +2,7 @@
 
 Welcome to the prototype website for the **Department of Data Science and Artificial Intelligence** at [PB Siddhartha collage of arts and science]. This website provides information about the department, including academic programs, faculty, research initiatives, events, and contact information.
 
-
+## 📹 Demo Video
 https://github.com/user-attachments/assets/92a6586d-8a98-4e21-9b6c-758263650823
 
 
