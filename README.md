@@ -54,6 +54,10 @@ cd department-website
 ```bash
 open index.html
 ```
+
+## Usage
+Simply open the index.html file in any modern web browser to explore the prototype website. Navigate through various sections to learn more about the Department of Data Science and Artificial Intelligence.
+
 ## Contributing
 
 Contributions are welcome! If you'd like to make improvements to the prototype website, please follow these steps:
