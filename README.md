@@ -6,13 +6,9 @@ Welcome to the prototype website for the **Department of Data Science and Artifi
 https://github.com/user-attachments/assets/92a6586d-8a98-4e21-9b6c-758263650823
 
 
-https://github.com/user-attachments/assets/52d599a4-fa38-453d-b323-670d021016b7
-
-
-
 https://github.com/user-attachments/assets/d4326a2b-19e7-4828-84a5-6946c8bea854
 
-
+https://github.com/user-attachments/assets/52d599a4-fa38-453d-b323-670d021016b7
 
 ## Table of Contents
 - [Project Overview](#project-overview)
